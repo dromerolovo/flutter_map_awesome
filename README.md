@@ -1,4 +1,4 @@
-# flutter_map
+# Awesome extensions for flutter_map
 
 A versatile mapping package for Flutter, based off of ['leaflet.js'](https://leafletjs.com/). Simple and easy to learn, yet completely customizable and configurable, it's the best choice for mapping in your Flutter app.
 
@@ -7,14 +7,16 @@ A versatile mapping package for Flutter, based off of ['leaflet.js'](https://lea
 
 ---
 
-## [Discord Server](https://discord.gg/egEGeByf4q)
+## Extensions
 
-Join the Discord server: <https://discord.gg/egEGeByf4q>!
+### Support for gradients in polygons
 
-Talk about 'flutter_map', get and give help, and receive notifications about new 'flutter_map' updates! More additions planned in the future.
-
-## [Documentation](https://docs.fleaflet.dev/)
-
-Visit the [documentation website here](https://docs.fleaflet.dev/), for all information about how to use this library, including setup and usage instructions.
-
-Some documentation is also provided within the code and can be view inside your favourite editor. These docs are also over at the [pub.dev package](https://pub.dev/documentation/flutter_map/latest/flutter_map/flutter_map-library.html), and can be viewed from within your favourite editor.
+      Polygon(
+        points: [...],
+        isFilled: true,
+        gradient: const LinearGradient(
+          begin: Alignment(-3, 3),
+          end: Alignment(3, -3),
+          colors: [...]
+        )
+      )
